@@ -21,4 +21,11 @@
         android:layout_margin="20dp"
         android:text="Navegar segundo fragment"/>
 
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:gravity="center"/>
+
 </LinearLayout>
