@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.navcomponents.databinding.FragmentSecondBinding
 
-class SecondFragment : Fragment(R.layout.fragment_second) {
+class SecondFragment : Fragment() {
 
     val args: SecondFragmentArgs by navArgs()
     private var _binding : FragmentSecondBinding? = null

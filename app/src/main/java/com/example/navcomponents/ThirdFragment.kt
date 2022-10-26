@@ -1,5 +1,6 @@
 package com.example.navcomponents
 
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -15,7 +16,7 @@ class ThirdFragment : Fragment(R.layout.fragment_third) {
         val button = view.findViewById<Button>(R.id.bt_nav3)
 
         button.setOnClickListener {
-            findNavController().navigate(R.id.action_thirdFragment_to_firstFragment)
+            findNavController().navigate(Uri.parse("navcomponents://card"))
             onDestroyView()
         }
     }

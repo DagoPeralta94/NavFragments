@@ -25,11 +25,7 @@
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_out_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:destination="@id/thirdFragment" />
         <argument
             android:name="name"
             app:argType="string"
@@ -42,7 +38,8 @@
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
         <action
-            android:id="@+id/action_thirdFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
+            android:id="@+id/action_thirdFragment_to_product_graph"
+            app:destination="@id/product_graph" />
     </fragment>
+    <include app:graph="@navigation/product_graph" />
 </navigation>
